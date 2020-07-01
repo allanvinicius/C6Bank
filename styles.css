@@ -1,20 +1,92 @@
-.menu {
-    display: flex;
+/* @media (max-width: 1200px){
+    .container {
+        width: 100%;
+        padding: 0px 24px;
+    }
 }
 
-.menu ul{
-    list-style: none;
+@media (max-width: 1440px){
+    header .left .logo {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 1050px){
+    header .left nav ul li {
+        margin-right: 30px;
+    }
+} */
+
+header {
+    display: flex;
+    width: 1940px;
+    margin: 0;
+    padding: 0;
+}
+
+header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 1940px;
 }
 
 /* Logo */
-.menu ul img {
-    left: 18.33%;
+header .left .logo {
+    margin-right: 50px;
+    position: relative;
+    z-index: 3;
+    left: 210.00%;
     right: 75.42%;
     top: 1.9%;
     bottom: 97.11%;
 }
 
-.menu ul li {
+html{
+    margin: 0;
+    padding: 0;
+    width: 1950px;
+}
+
+header .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 1300px;
+    padding-right: 30px;
+    
+}
+
+header .right {
+    width: 243px;
+    height: 60px;
+    left: 1340px;
+    top: 130px;
+    display: flex;
+    position: absolute;
+}
+
+header .left nav ul li {
+    margin-right: 54px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.container .left ul{
+    list-style: none;
+}
+
+.container .left ul li {
     position: absolute;
     font-style: normal;
     font-weight: 500;
@@ -25,16 +97,15 @@
 }
 
 /* Para você */
-.menu ul .item1{
+.container .left ul .item1{
     position: absolute;
     width: 76px;
     height: 19px;
 
-    left: -2.33%;
-    /* right: 75.42%; */
-    top: -920.0%;
+    left: 9.33%;
+    top: -12.20%;
     
-    bottom: 97.11%;
+    
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -48,12 +119,12 @@
 }
 
 /* Para seu negócio */
-.menu ul .item2{
+.container .left ul .item2{
     position: absolute;
     width: 132px;
     height: 19px;
-    left: 15.33%;
-    top: -920.0%;
+    left: 16.33%;
+    top: -12.20%;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -68,7 +139,7 @@
 }   
 
 /* Link */
-.menu ul li a {
+.container .left ul li a {
     display: block;
     padding: 10px 10px;
     display: inline;
@@ -78,22 +149,25 @@
 }
 
 /* Botão abra sua conta */
-.menu ul header button{
+.container .right button{
+    position: absolute;
     width: 243px;
     height: 40px;
-    left: 985px;
-    top: 145px;
+    left: -10px;
+    top: 13px;
 
-    background-color: #FFCE2E;
+
+    background: #FFCE2E;
     border-radius: 100px;
 }
 
 /* abra sua conta */
-.menu ul button h3 {
+.container .right button h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
+    
     line-height: 5px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -101,24 +175,14 @@
     color: #242424;
 }
 
-/* Cabeçalho do menu */
-.menu header {
-    /* display: flex; */
-    justify-content: space-between;
-    position: absolute;
-    width: 1216px;
-    height: 40px;
-    left: 352px;
-    top: -30px;
-}
-
 /* Um banco transparente, completo e com a sua cara */
-h1 {
+.banner .left h1 {
     position: absolute;
     width: 740px;
     height: 124px;
     left: 352px;
-    top: 248px;
+    top: 270px;
+    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
@@ -129,12 +193,13 @@ h1 {
 
 /* Conta digital e cartão de crédito gratuitos. 
 Saques e transferências sem tarifa. */
-h2 {
+.banner .left h2 {
     position: absolute;
     width: 365px;
     height: 54px;
     left: 352px;
-    top: 396px;
+    top: 450px;
+    
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -145,7 +210,7 @@ h2 {
 }
 
 /* nossos produtos */
-h3 {
+.banner .left button h3 {
     font-family: 'Montserrat';
     font-weight: 500;
     font-style: normal;
@@ -158,12 +223,12 @@ h3 {
 }
 
 /* Sem tarifas: */
-h4 {
+.left h4 {
     position: absolute;
     width: 234px;
     height: 52px;
-    left: 353px;
-    top: 796px;
+    left: 240px;
+    top: 120px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -174,15 +239,15 @@ h4 {
     letter-spacing: -0.03em;
 
     color: #242424;
-}
+} 
 
 /* economize seu dinheiro */
-h5 {
+.left h5 {
     position: absolute;
     width: 341px;
     height: 36px;
-    left: 353px;
-    top: 856px;
+    left: 240px;
+    top: 180px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -198,12 +263,13 @@ h5 {
 body {
     position: relative;
     line-height: 20.00;
-    width: 1900px;
-    height: 1097px;
+    width: 2900px;
+    height: 3000px;
     left: -24px;
     top: -85px;
     background-image: url(images/tela.png);
     background-repeat: no-repeat;
+    
 }
 
 /*  */
@@ -225,13 +291,17 @@ a {
     color: #FFFFFF;
 }
 
-/* BOTÂO NOSSOS PRODUTOS */
-button {
+.banner .left {
+    width: 1000px;
+}
+
+/* BOTAO NOSSOS PRODUTOS */
+.banner .left button {
     position: absolute;
     width: 243px;
     height: 48px;
     left: 352px;
-    top: 490px;
+    top: 550px;
 
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
@@ -240,12 +310,12 @@ button {
 }
 
 /* Conheça nosso Programa de Pontos Átomos */
-p {
+.banner .left p {
     position: absolute;
-    width: 320px;
+    width: 520px;
     height: 23px;
     left: 418px;
-    top: 191px;
+    top: 220px;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -259,26 +329,49 @@ p {
     opacity: 0.7;
 }
 
+.banner {
+    top: 100px;
+    padding-top: 1px;
+    padding-bottom: 1px; 
+    height: 400px;
+}
+
+.banner .container img {
+    position: relative;
+    line-height: 20.00;
+    width: 1900px;
+    height: 1097px;
+    left: -24px;
+    top: -85px;
+    background-repeat: no-repeat;
+}
+
+.banner .container {
+    width: 2243px;
+    padding: 0 15px;
+    margin: 0 auto; 
+}
+
 /* Botão azul NOVO */
-.buttonN {
+.banner .left .buttonN {
     position: absolute;
     width: 54px;
     height: 26px;
     left: 352px;
-    top: 210px;
+    top: 240px;
     
     background: #006D8F;
     border-radius: 120px;
 }
 
 /* Novo */
-.buttonN h3 {
+.banner .left .buttonN h3 {
     width: 16px;
     height: 16px;
     left: 363px;
     top: 200px;
 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -287,24 +380,87 @@ p {
     color: #FFFFFF;
 }
 
-/* imagem dos cartões coloridos */
-.tela2 img{
+.vantagens .right {
     position: absolute;
     width: 466.29px;
     height: 859.14px;
     left: 1101.71px;
     top: 700px;
+}
+
+/* imagem dos cartões coloridos */
+.right img{
+    position: absolute;
+    width: 466.29px;
+    height: 859.14px;
+    left: 3.71px;
+    top: 10px;
 
     background: url(images/cartoes.png);
 }
 
+.vantagens {
+    padding-bottom: 50px;
+    height: 1000px;
+}
+
+.vantagens .container {
+    padding-bottom: 900px;
+    height: 1000px;
+}
+
+.vantagens .left {
+    position: absolute;
+    width: 966.29px;
+    height: 859.14px;
+    left: 100.71px;
+    top: 700px;
+    margin-right: 30px;
+}
+
+.vantagens .left .grupo1 {
+    width: 15px;
+}
+
+.vantagens .left .grupo2 {
+    width: 30px;
+   
+}
+
+.vantagens .left .grupo3 {
+    width: 30px;
+   
+}
+
+.vantagens .left .grupo4 {
+    width: 30px;
+   
+}
+
+.retanguloC .left {
+    display: flex;
+    width: 900px;
+    height: 300px;
+    left: 340px;
+    top: 120px;
+}
+
+.retanguloC .right {
+    position: absolute;
+    display: flex;
+    width: 506px;
+    height: 300px;
+    left: 1319px;
+    top: 200px;
+}
+
 /* Um banco completo */
-.tela3 h4 {
+.retanguloC .left h4 {
     position: absolute;
     width: 406px;
     height: 52px;
-    left: 352px;
-    top: 1681px;
+    left: 340px;
+    top: 120px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -318,12 +474,12 @@ p {
 }
 
 /* com produtos exclusivos */
-.tela3 h5{
+.retanguloC .left h5{
     position: absolute;
     width: 351px;
     height: 36px;
-    left: 352px;
-    top: 1741px;
+    left: 340px;
+    top: 200px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -334,25 +490,25 @@ p {
     color: #616161;
 }
 
-/* BOTÂO  */
-.tela3 button {
+/* BOTÃO  */
+.retanguloC .right button {
     position: absolute;
     width: 269px;
     height: 56px;
-    left: 987px;
-    top: 1758px;
+    left: -340px;
+    top: 18px;
 
     background: #242424;
     border-radius: 120px;
 }
 
 /* Botão da frase PARA VOCÊ */
-.tela3 button h3 {
+.retanguloC .right button h3 {
     position: absolute; 
     width: 101px;
     height: 30px;
     left: 80px;
-    top: -1px;
+    top: 1px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -367,13 +523,13 @@ p {
     color: #FFFFFF; 
 }
 
-/* PARA VOCÊ */
-.tela3 h3 {
+/* PARA SUA EMPRESA */
+.retanguloC h3 {
     position: absolute;
     width: 175px;
     height: 20px;
-    left: 1319px;
-    top: 1758px;
+    left: -10px;
+    top: 20px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -391,12 +547,12 @@ p {
 
 
 /* retângulo dos botões para você e para sua empresa */
-.retangulo{
+.retanguloC .right .retangulo{
     position: absolute;
     width: 592px;
     height: 72px;
-    left: 976px;
-    top: 1750px;
+    left: -350px;
+    top: 10px;
 
     opacity: 0.6;
     border: 1px solid #C4C4C4;
@@ -416,32 +572,37 @@ p {
     background: #FAFAFA;
 }
 
+.retanguloC .container {
+    width: 1800px;
+    height: 1000px;
+}
+
 /* retângulo preto */
-.retanguloP {
+.retanguloC .retanguloP {
     position: absolute;
     width: 1216px;
     height: 424px;
-    left: 352px;
-    top: 1900px;
+    left: 340px;
+    top: 400px;
 
     background: linear-gradient(113.45deg, #020302 7.61%, #242424 96.26%);
     border-radius: 12px;
 }
 
 /* imagem do cartão black */
-.retanguloP img {
+.retanguloP .right img {
     position: absolute;
     width: 462.37px;
     height: 396.41px;
-    left: 500px;
-    top: -90px;
+    left: -800px;
+    top: -300px;
 
     background: url(images/cartao_black.png);
     background-repeat: no-repeat;
 }
 
 /* Conta com cartão C6 Business */
-.retanguloP h4 {
+.retanguloC .retanguloP .left h4 {
     position: absolute;
     width: 210px;
     height: 62px;
@@ -463,7 +624,7 @@ p {
 /* A conta MEI é completa e não tem tarifa de 
 manutenção. Além disso, você pode ter 
 um cartão de crédito sem anuidade. */
-.retanguloP h5 {
+.retanguloC .retanguloP h5 {
     position: absolute;
     width: 341px;
     height: 72px;
@@ -483,40 +644,66 @@ um cartão de crédito sem anuidade. */
 }
 
 /* imagem do celular */
-.celular {
+.right .celular {
     position: absolute;
     width: 519px;
     height: 485px;
     left: 130px;
-    top: 115px;
+    top: 125px;
 
     background: url(images/celular_c6.png);
     background: no-repeat;
 }
 
 /* ellipse de aproximação e pagamento */
-.ellipse {
+.retanguloP .left .ellipse {
     position: absolute;
     width: 32px;
     height: 32px;
-    left: 455px;
-    top: 2158px;
+    left: 110px;
+    top: 258px;
 
     background: #FFFFFF;
     border-radius: 100px;
+}
+
+.retanguloP .container {
+    width: 1220px;
+    height: 425px;
+}
+
+.retanguloP .left {
+    display: flex;
+    width: 500px;
+    height: 425px;
+    left: 340px;
+    top: 120px;
+}
+
+.retanguloP .right {
+    width: 519px;
+    
 }
 
 /* logo C6 Business */
 .c6_Business {
     position: absolute;
     left: 71.04%;
-    right: 22.11%;
-    top: 205.00%;
-    bottom: 7.72%;
+
+    top: 91.54%;
+    background: aqua;
+}
+
+/* logo C6 Business */
+.retanguloP  .right .c6_Business {
+    position: absolute;
+    left: -60.04%;
+    width: 150px;
+    top: -5.54%;
 }
 
 /* Aproxime e pague */
-.retanguloP h3 {
+.retanguloC .retanguloP .left h3 {
     position: absolute;
     width: 121px;
     height: 21px;
@@ -534,48 +721,48 @@ um cartão de crédito sem anuidade. */
 }
 
 /* ícone cartão */
-.c1{
+.left .c1{
     position: absolute;
     width: 22px;
     height: 16px;
-    left: 357px;
-    top: 992px;
+    left: 240px;
+    top: 350px;
 }
 
 /* ícone transferências */
-.c2 {
+.left .c2 {
     position: absolute;
     width: 18px;
     height: 22px;
-    left: 725px;
-    top: 987px;
+    left: 625px;
+    top: 350px;
 }
 
 /* ícone depósito */
-.c3{
+.left .c3{
     position: absolute;
     width: 12px;
     height: 22px;
-    left: 357px;
-    top: 1239px;
+    left: 240px;
+    top: 610px;
 }
 
 /* ícone atendimento */
-.c4{
+.left .c4{
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 725px;
-    top: 1239px;
+    left: 625px;
+    top: 610px;
 }
 
 /* Saques nos caixas da rede Banco24Horas */
-.grupo1 h1 {
+.left .grupo1 h1 {
     position: absolute;
     width: 227px;
     height: 54px;
-    left: 356px;
-    top: 1037px;
+    left: 240px;
+    top: 385px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -588,12 +775,12 @@ um cartão de crédito sem anuidade. */
 
 /* São mais de 23 mil caixas em 680 municípios do Brasil. 
 Saques ilimitados sem cobrança de tarifa. */
-.grupo1 h2{
+.left .grupo1 h2{
     position: absolute;
     width: 259px;
     height: 72px;
-    left: 356px;
-    top: 1099px;
+    left: 240px;
+    top: 450px;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -605,12 +792,12 @@ Saques ilimitados sem cobrança de tarifa. */
 }
 
 /* Transferências e TEDs ilimitadas */
-.grupo2 h1 {
+.left .grupo2 h1 {
     position: absolute;
     width: 243px;
     height: 54px;
-    left: 725px;
-    top: 1037px;
+    left: 625px;
+    top: 385px;
     
     font-family: 'Montserrat';
     font-style: normal;
@@ -623,12 +810,12 @@ Saques ilimitados sem cobrança de tarifa. */
 
 /* Movimente seu dinheiro para qualquer conta 
 em qualquer banco sem pagar nada por isso. */
-.grupo2 h2{
+.left .grupo2 h2{
     position: absolute;
     width: 256px;
     height: 72px;
-    left: 725px;
-    top: 1099px;
+    left: 625px;
+    top: 450px;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -640,12 +827,12 @@ em qualquer banco sem pagar nada por isso. */
 }
 
 /* Depósito por boleto */
-.grupo3 h1{
+.left .grupo3 h1{
     position: absolute;
     width: 243px;
     height: 27px;
-    left: 356px;
-    top: 1292px;
+    left: 240px;
+    top: 650px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -658,12 +845,12 @@ em qualquer banco sem pagar nada por isso. */
 
 /* Emita boletos grátis e traga dinheiro 
 para a sua conta C6 sem pagar tarifas. */
-.grupo3 h2 {
+.left .grupo3 h2 {
     position: absolute;
     width: 251px;
     height: 72px;
-    left: 356px;
-    top: 1327px;
+    left: 240px;
+    top: 690px;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -675,12 +862,12 @@ para a sua conta C6 sem pagar tarifas. */
 }
 
 /* Atendimento 24h */
-.grupo4 h1{
+.left .grupo4 h1{
     position: absolute;
     width: 243px;
     height: 27px;
-    left: 725px;
-    top: 1292px;
+    left: 625px;
+    top: 650px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -693,12 +880,12 @@ para a sua conta C6 sem pagar tarifas. */
 
 /* Conte com a gente 24h por dia, 
 7 dias por semana pelo chat do app. */
-.grupo4 h2{
+.left .grupo4 h2{
     position: absolute;
     width: 235px;
     height: 72px;
-    left: 725px;
-    top: 1327px;
+    left: 625px;
+    top: 690px;
 
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -710,60 +897,56 @@ para a sua conta C6 sem pagar tarifas. */
 }
 
 /* traço amarelo 1(grupo1) */
-.traco_1 {
+.left .traco_1 {
     position: absolute;
     width: 15px;
     height: 2px;
-    left: 357px;
-    top: 1019px;
+    left: 240px;
+    top: 375px;
 
     background: #FFCE2E;
 }
 
 /* traço amarelo 2 (grupo2)*/
-.traco_2 {
+.left .traco_2 {
     position: absolute;
     width: 15px;
     height: 2px;
-    left: 725px;
-    top: 1019px;
+    left: 625px;
+    top: 380px;
 
     background: #FFCE2E;
 }
 
 /* traço amarelo 3 (grupo3)*/
-.traco_3 {
+.left .traco_3 {
     position: absolute;
     width: 15px;
     height: 2px;
-    left: 357px;
-    top: 1274px;
+    left: 240px;
+    top: 640px;
 
     background: #FFCE2E;
 }
 /* traço amarelo 4 (grupo4)*/
-.traco_4 {
+.left .traco_4 {
     position: absolute;
     width: 15px;
     height: 2px;
-    left: 725px;
-    top: 1274px;
+    left: 625px;
+    top: 640px;
 
     background: #FFCE2E;
 }
 
-.menu div {
-    display: inline-block;
-    margin-right: 10px;
-}
 
 /* polígono amarelo (Opção Para você) */
-.polygon_1 {
+.container .polygon_1 {
     position: absolute;
     width: 1.5px;
     height: 6px;
-    left: 767.5px;
-    top: 154px;
+    left: 810.5px;
+    top: 155px;
 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -773,11 +956,11 @@ para a sua conta C6 sem pagar tarifas. */
 }
 
 /* polígono amarelo (Opção Para seu negócio) */
-.polygon_2 {
+.container .polygon_2 {
     position: absolute;
     width: 1.5px;
     height: 6px;
-    left: 515.5px;
+    left: 1050.5px;
     top: 154px;
 
     border-left: 5px solid transparent;
@@ -785,12 +968,4 @@ para a sua conta C6 sem pagar tarifas. */
     border-top: 5px solid #FFCE2E;
 
     border-radius: 0.5px;
-}
-
-.grid {
-    display: grid;
-}
-
-.grid-template-columns {
-    grid-template-columns: 200px 200px 200px 200px;
 }

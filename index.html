@@ -7,107 +7,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link rel="stylesheet" type="text/css" href="font.css" media="screen">
 
     <title>Banco com Conta Digital, Cartão sem tarifas e mais | C6 Bank</title>
 </head>
 
 <body>
-    <nav>
-        <div class="menu">
-            <ul>
-                <header>
-                    <img src="images/logo.svg" aria-hidden="true" alt>
+    <header>
+        <div class="container">
+            <div class="left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="logo C6Bank">
+                </a>
+                <nav>
+                    <ul>
+                        <div class="polygon_1"></div>
+                        <li class="item1">
+                            <a href="#paravoce" style="font-family: 'Inter';">Para você</a>
+                        </li>
 
-                    <div class="polygon_1"></div>
-                    <li class="item1"><a href="#">Para você</a></li>
-
-                    <div class="polygon_2"></div>
-                    <li class="item2"><a href="#">Para seu negócio</a></li>
-
-                    <button>
-                        <h3>ABRA SUA CONTA</h3>
-                    </button>
-                </header>
-            </ul>
+                        <div class="polygon_2"></div>
+                        <li class="item2">
+                            <a href="#paraseunegocio" style="font-family: 'Inter';">Para seu negócio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+                <button>
+                    <h3>ABRA SUA CONTA</h3>
+                </button>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <img src="/images/tela.png" aria-hidden="true" alt>
-    <div>
-        <button class="buttonN">
-            <h3>NOVO</h3>
-        </button>
-        <p>Conheça nosso Programa de Pontos Átomos</p>
-        <h1>Um banco transparente, completo e com a sua cara</h1>
-        <h2>Conta digital e cartão de crédito gratuitos. Saques e transferências sem tarifa.</h2>
-        <div>
-            <button>
-                <h3>NOSSOS PRODUTOS</h3>
-            </button>
+    <section class="banner">
+        <div class="container">
+            <div class="left">
+                <img src="/images/tela.png" aria-hidden="true" alt>
+                <button class="buttonN">
+                    <h3 style="font-family: 'Inter';">NOVO</h3>
+                </button>
+                <p style="font-family: 'Inter';">Conheça nosso Programa de Pontos Átomos</p>
+                <h1>Um banco transparente, completo e com a sua cara</h1>
+                <h2 style="font-family: 'Inter';">Conta digital e cartão de crédito gratuitos. Saques e transferências sem tarifa.</h2>
+                <button>
+                    <h3>NOSSOS PRODUTOS</h3>
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="tela2">
-        <img src="images/cartoes.png" aria-hidden="true" alt>
-        <h4>Sem tarifas:</h4>
-        <h5>economize seu dinheiro</h5>
-    </div>
-
-    <section class="grclass grclass-template-columns">
-        <img class="c1" src="images/icone_cartao.svg" aria-hidden="true" alt>
-
-        <div class="traco_1"></div>
-        <div class="grupo1">
-            <h1>Saques nos caixas da rede Banco24Horas</h1>
-            <h2>São mais de 23 mil caixas em 680 municípios do Brasil. Saques ilimitados sem cobrança de tarifa.</h2>
-        </div>
-
-        <div class="grupo2">
-            <h1>Transferências e TEDs ilimitadas</h1>
-            <h2>Movimente seu dinheiro para qualquer conta em qualquer banco sem pagar nada por isso.</h2>
-        </div>
-
-        <img class="c2" src="images/icone_trasf.svg" aria-hidden="true" alt>
-        <div class="traco_2"></div>
-        <div class="grupo3">
-            <h1>Depósito por boleto</h1>
-            <h2>Emita boletos grátis e traga dinheiro para a sua conta C6 sem pagar tarifas.</h2>
-        </div>
-
-        <img class="c3" src="images/icone_deposito.svg" aria-hidden="true" alt>
-        <div class="traco_3"></div>
-        <div class="grupo4">
-            <h1>Atendimento 24h</h1>
-            <h2>Conte com a gente 24h por dia, 7 dias por semana pelo chat do app.</h2>
-        </div>
-
-        <img class="c4" src="images/icone_atendimento.svg" aria-hidden="true" alt>
-        <div class="traco_4"></div>
     </section>
 
-    <div class="retanguloC"></div>
-        <div class="tela3">
-            <h4>Um banco completo</h4>
-            <h5>com produtos exclusivos</h5>
-            <button>
-                <h3>PARA VOCÊ</h3>
-            </button>
-            <h3>PARA SUA EMPRESA</h3>
-           
-        </div>
-        <button class="retangulo"></button>
-        <div class="retanguloP">
-            <img src="images/cartão_black.png" aria-hidden="true" alt>
-            <div class="celular">
-                <img src="images/celular_c6.png" aria-hidden="true" alt>
+    <section class="vantagens" id="paravoce">
+        <div class="container">
+            <div class="left">
+                <h4>Sem tarifas:</h4>
+                <h5>economize seu dinheiro</h5>
+
+
+                <img class="c1" src="images/icone_cartao.svg" aria-hidden="true" alt>
+
+                <div class="traco_1"></div>
+                <div class="grupo1">
+                    <h1>Saques nos caixas da rede Banco24Horas</h1>
+                    <h2>São mais de 23 mil caixas em 680 municípios do Brasil. Saques ilimitados sem cobrança de tarifa.
+                    </h2>
+                </div>
+
+                <div class="grupo2">
+                    <h1>Transferências e TEDs ilimitadas</h1>
+                    <h2>Movimente seu dinheiro para qualquer conta em qualquer banco sem pagar nada por isso.</h2>
+                </div>
+
+                <img class="c2" src="images/icone_trasf.svg" aria-hidden="true" alt>
+                <div class="traco_2"></div>
+                <div class="grupo3">
+                    <h1>Depósito por boleto</h1>
+                    <h2>Emita boletos grátis e traga dinheiro para a sua conta C6 sem pagar tarifas.</h2>
+                </div>
+
+                <img class="c3" src="images/icone_deposito.svg" aria-hidden="true" alt>
+                <div class="traco_3"></div>
+                <div class="grupo4">
+                    <h1>Atendimento 24h</h1>
+                    <h2>Conte com a gente 24h por dia, 7 dias por semana pelo chat do app.</h2>
+                </div>
+
+                <img class="c4" src="images/icone_atendimento.svg" aria-hidden="true" alt>
+                <div class="traco_4"></div>
             </div>
-            <h4>Conta com cartão</br>C6 Business</h4>
-            <h5>A conta MEI é completa e não tem tarifa de manutenção. Além disso, você pode ter um cartão de crédito sem anuidade.</h5>
-            <h3>Aproxime e pague</h3>
+
+            <div class="right">
+                <img src="images/cartoes.png" aria-hidden="true" alt>
+            </div>
         </div>
-    </div>
-    <img class="ellipse" src="images/icone_ellipse.svg" aria-hidden="true" alt>
-    <img class="c6_Business" src="images/logo_C6BankBusiness.svg" aria-hclassden="true" alt>
+    </section>
+
+    <section class="retanguloC" id="paraseunegocio">
+        <div class="container">
+            <div class="left">
+                <h4>Um banco completo</h4>
+                <h5>com produtos exclusivos</h5>
+            </div>
+            <div class="right">
+                <button>
+                    <h3>PARA VOCÊ</h3>
+                </button>
+                <h3>PARA SUA EMPRESA</h3>
+                <button class="retangulo"></button>
+            </div>
+        </div>
+
+        <div class="retanguloP">
+            <div class="container">
+                <div class="left">
+                    <h4>Conta com cartão</br>C6 Business</h4>
+                    <h5 style="font-family: 'Inter';">A conta MEI é completa e não tem tarifa de manutenção. Além disso, você pode ter um cartão de crédito sem anuidade.</h5>
+                    <h3 style="font-family: 'Inter';">Aproxime e pague</h3>
+                    <img class="ellipse" src="images/icone_ellipse.svg" aria-hidden="true" alt>
+                </div>
+                <div class="right">
+                    <img src="images/cartão_black.png" aria-hidden="true" alt>
+                    <div class="celular">
+                        <img src="images/celular_c6.png" aria-hidden="true" alt>
+                    </div>
+                    <img class="c6_Business" src="images/logo_c6Business.svg" aria-hidden="true" alt>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
